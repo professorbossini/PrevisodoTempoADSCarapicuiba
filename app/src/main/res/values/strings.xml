@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Previsão do Tempo ADS Carapicuiba</string>
+    <string name="action_settings">Settings</string>
+    <string name="api_key">ef0b0973b783e0614ac87612ec04344b</string>
+    <string name="web_service_url">http://api.openweathermap.org/data/2.5/forecast/daily?q=</string>
+    <string name="invalid_url">URL inválida</string>
+    <string name="weather_condition_image">Uma representação gráfica das condições de tempo</string>
+    <string name="high_temp">Máxima: %s</string>
+    <string name="low_temp">Mínima: %s</string>
+    <string name="day_description">%1$s: %2$s</string>
+    <string name="humidity">Umidade: %s</string>
+    <string name="hint_text">Digite o nome da cidade</string>
+    <string name="read_error">Não foi possível fazer a leitura dos dados</string>
+    <string name="connect_error">Não foi possível se conectar ao servidor</string>
+
+</resources>

@@ -1,0 +1,27 @@
+package br.com.bossini.previsodotempoadscarapicuiba;
+
+import java.text.NumberFormat;
+
+/**
+ * Created by rodrigo on 11/9/17.
+ */
+
+public class Weather {
+    public final String dayOfWeek;
+    public final String minTemp;
+    public final String maxTemp;
+    public final String humidity;
+    public final String description;
+    public final String iconURL;
+
+    public Weather (long timeStamp, double minTemp, double maxTemp, double humidity, String description, String iconName){
+        NumberFormat numberFormat = NumberFormat.getNumberInstance();
+        numberFormat.setMaximumFractionDigits(0);
+        this.dayOfWeek = convertTimeStampToDay (timeStamp);
+        this.minTemp = numberFormat.format(minTemp) + "\u00B0C";
+        this.maxTemp = numberFormat.format(maxTemp) + "\u00B0C";
+        this.humidity = NumberFormat.getPercentInstance().format(humidity / 100);
+        this.description = description;
+        this.iconURL = "http://openweathermap.org/img/w/" + iconName + ".png";
+    }
+}
